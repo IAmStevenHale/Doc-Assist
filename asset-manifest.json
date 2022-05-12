@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Doc-Assist/static/css/main.121c7cfa.css",
+    "main.js": "/Doc-Assist/static/js/main.08905339.js",
+    "index.html": "/Doc-Assist/index.html",
+    "main.121c7cfa.css.map": "/Doc-Assist/static/css/main.121c7cfa.css.map",
+    "main.08905339.js.map": "/Doc-Assist/static/js/main.08905339.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.121c7cfa.css",
+    "static/js/main.08905339.js"
+  ]
+}
