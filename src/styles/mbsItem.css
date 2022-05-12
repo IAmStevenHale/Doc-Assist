@@ -1,0 +1,17 @@
+.MBSItemContainer {
+  border-top: 2px solid;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+}
+
+.checkBox {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+}
+.MBSItemInfo {
+  padding: 5px 15px 5px 5px;
+}

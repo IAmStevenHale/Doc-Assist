@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1c;
+  color: wheat;
+}
+
+.app {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1px 1fr 1fr 1fr 1fr 1px;
+  grid-template-rows: 0.3fr 1fr 1fr 1fr 0.2fr 0.5fr;
+  gap: 20px;
+  min-height: 500px;
+  width: 100%;
+}
+.navbar {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.search {
+  grid-column-start: -3;
+  grid-column-end: -2;
+  grid-row-start: -6;
+  grid-row-end: -3;
+}
+.docAssist {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 5;
+}
+
+.submit {
+  grid-column-start: 2;
+  grid-column-end: -2;
+  grid-row-start: 5;
+  grid-row-end: -2;
+}
+
+.ads {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 6;
+  grid-row-end: -1;
+}

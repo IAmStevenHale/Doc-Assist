@@ -1,0 +1,24 @@
+.submit {
+  /* border: 1px solid wheat; */
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.submit > form {
+  height: 80%;
+  width: 40vw;
+  display: flex;
+}
+
+.submit > form > input[type='email'] {
+  flex: 5;
+  border: 1px solid wheat;
+  border-radius: 10px;
+  text-align: center;
+}
+.submit > form > input[type='submit'] {
+  flex: 2;
+}

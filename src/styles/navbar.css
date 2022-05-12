@@ -1,0 +1,8 @@
+.navbar {
+  background-color: black;
+  color: wheat;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 10px 10px;
+}
