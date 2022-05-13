@@ -29,24 +29,25 @@ const DocAssist = () => {
     currentNotes = currentNotes.filter(function (el) {
       return commonWords.indexOf(el) < 0;
     });
+
     //rake filter
     for (let i = 0; i < MBSItems.length; i++) {
       if (doctorTypeFilter.includes(MBSItems[i].ProviderType)) {
         cleanArray.push(MBSItems[i]);
       }
-      for (let j = 0; j < currentNotes.length; j++) {
-        if (MBSItems[i].Description.includes(currentNotes[j])) {
-          cleanArray.push(MBSItems[i]);
-          // console.log('test');
+      if (currentNotes[0] !== '') {
+        for (let j = 0; j < currentNotes.length; j++) {
+          if (MBSItems[i].Description.includes(currentNotes[j])) {
+            cleanArray.push(MBSItems[i]);
+          }
         }
       }
     }
-    console.log(cleanArray);
     // console.log(notes);
     // console.log(doctorTypeFilter);
     // console.log(coins);
-
-    setCoins(cleanArray);
+    setCoins([...new Set(cleanArray)]);
+    console.log(coins);
   }
 
   function handleChange(e) {
