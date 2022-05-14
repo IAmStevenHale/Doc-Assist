@@ -1,5 +1,5 @@
 .MBSItemContainer {
-  border-top: 2px solid;
+  border-bottom: 2px solid;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -14,4 +14,12 @@
 }
 .MBSItemInfo {
   padding: 5px 15px 5px 5px;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+li,
+ul {
+  border-radius: 10px;
+  background-color: transparent;
 }

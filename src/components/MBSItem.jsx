@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/mbsItem.css';
 
 const MBSItem = ({
+  Score,
   ItemNum,
   SubItemNum,
   ItemStartDate,
@@ -44,7 +45,14 @@ const MBSItem = ({
       </div>
 
       <div className='MBSItemInfo'>
-        <div className='ItemNum'>{ItemNum}</div>
+        <div className='Score'>
+          <strong>Score: </strong>
+          {Score}
+        </div>
+        <div className='ItemNum'>
+          <strong>Item Number: </strong>
+          {ItemNum}
+        </div>
         <div className='SubItemNum'>{SubItemNum}</div>
         <div className='ItemStartDate'>{ItemStartDate}</div>
         <div className='ItemEndDate'>{ItemEndDate}</div>
@@ -75,7 +83,10 @@ const MBSItem = ({
         {/* <div className='EMSNDescription'>{EMSNDescription}</div> */}
         {/* <div className='EMSNChangeDate'>{EMSNChangeDate}</div> */}
         {/* <div className='DescriptionStartDate'>{DescriptionStartDate}</div> */}
-        <div className='Description'>{Description}</div>
+        <div className='Description'>
+          <strong>Description: </strong>
+          {Description}
+        </div>
         {/* <div className='QFEStartDate'>{QFEStartDate}</div> */}
         {/* <div className='QFEEndDate'>{QFEEndDate}</div> */}
       </div>

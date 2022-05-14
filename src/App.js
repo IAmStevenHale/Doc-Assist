@@ -4,7 +4,6 @@ import React from 'react';
 import Search from './components/Search';
 import Ads from './components/Ads';
 import DocAssist from './components/DocAssist';
-import Submit from './components/Submit';
 
 function App() {
   return (
@@ -12,7 +11,6 @@ function App() {
       <Navbar />
       <Search />
       <DocAssist />
-      <Submit />
       <Ads />
     </div>
   );
