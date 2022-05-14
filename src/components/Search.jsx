@@ -6,7 +6,6 @@ import React, { useEffect, useState } from 'react';
 const Search = () => {
   const [coins, setCoins] = useState([]);
   const [search, setSearch] = useState('');
-
   useEffect(() => {
     setCoins(MBSData.MBS_XML.Data);
   }, []);
@@ -34,10 +33,10 @@ const Search = () => {
           </form>
         </div>
         <ul>
-          {filteredMBS.slice(0, 100).map((item) => (
+          {filteredMBS.slice(0, 100).map((item, index) => (
             <li>
               <MBSItem
-                key={item.ItemNum}
+                key={index}
                 ItemNum={item.ItemNum}
                 Description={item.Description}
               />

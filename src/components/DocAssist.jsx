@@ -215,7 +215,7 @@ const DocAssist = () => {
           </div>
         </fieldset>
         <div className='submitBox'>
-          <label className='pseudoSubmit' for='submit-form' tabIndex='0'>
+          <label className='pseudoSubmit' htmlFor='submit-form' tabIndex='0'>
             Search For Suggestions
           </label>
         </div>
